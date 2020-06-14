@@ -61,7 +61,7 @@ a:link, a:visited {
 }
 
 a:hover, a:active {
-    filter: brightness(0) saturate(100%) invert(72%) sepia(51%) saturate(376%) hue-rotate(148deg) brightness(84%) contrast(89%);
+    filter: brightness(0) saturate(100%) invert(82%) sepia(41%) saturate(3840%) hue-rotate(175deg) brightness(86%) contrast(83%);
     text-decoration: none;
 }
 
