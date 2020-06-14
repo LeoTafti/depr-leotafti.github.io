@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    background-color: black;
+    color: #bbbbbb;
+}
+
+header {
+    background-color: #eeeeee;
+    color: black;
+    text-align: center;
+}
+
+#headline {
+    margin: 5px;
+}
+
+#fullname {
+    margin: 5px 0 10px 0;
+}
+
+#portrait {
+    margin-bottom:8px;
+}
+
+#contact {
+    margin-top: 10px;
+}
+
+#contact ul{
+    margin:0 auto;
+    padding:0;
+    list-style-type: none;
+    display: table;
+    width:65%;
+}
+
+#contact ul li{
+    display: table-cell;
+}
+
+.contact-icon{
+    vertical-align: middle;
+    margin-bottom: 4px;
+}
+
+.content{
+    max-width: 700px;
+    margin: auto;
+    font-family: Avenir Next,Helvetica Neue,sans-serif;
+    padding: 10px;
+}
+
+a:link, a:visited {
+    font-weight: 500;
+    color:currentColor;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    filter: brightness(0) saturate(100%) invert(72%) sepia(51%) saturate(376%) hue-rotate(148deg) brightness(84%) contrast(89%);
+    text-decoration: none;
+}
+
+.li-bullet{
+    margin-left: -18%;
+    margin-top: 2px;
+    float: left;
+    font-weight: bold;
+}
+
+.li-content{
+    margin-left: 0px;
+}
+
+ul.my-list {
+    padding: 0px;
+    list-style-type: none;
+}
+
+ul.my-list > li{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: white
+}
+
+h3, .li-bullet{
+    color: rgb(97, 161, 204);
+}
+
+.li-content > h4{
+    color: white;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.line-sep {
+    border-top: solid 1px white;
+    width: 130%;
+    margin-left:-18%;
+    padding-left:18%;
+    padding-top:10px;
+}
+
+.github-project-icn {
+    width:20px;
+    height:20px;
+    margin-left: 10px;
+    margin-bottom: 3px;
+    vertical-align: middle;
+}
+
+
+#socials{
+    position: fixed;
+    top: 325px;
+    right: 4%;
+}
+
+#socials > ul{
+    list-style-type: none;
+}
+
+#socials > ul > li{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#skills{
+    margin-bottom: 15px;
+}
+
+.icon-list{
+    list-style-type: none;
+}
+
+.icon-list li{
+    display: inline-block;
+    padding:7px;
+    border:1px solid;
+    border-radius:8px;
+    text-align:center;
+    font-size:11px;
+    letter-spacing:1px;
+    margin:10px;
+    text-transform:uppercase;
+    transition: color .5s;
+}
+
+.icon-list li:hover{
+    color:rgb(97, 161, 204);
+}
+
+#interests {
+    margin-bottom:20px;
+}
+
+b {
+    color:rgb(97, 161, 204);
+}
+
+p {
+    line-height:150%;
+}
+   
+.fade-on-load, .fade-on-scroll {
+    opacity:0;
+}
