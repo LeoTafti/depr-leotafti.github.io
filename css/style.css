@@ -4,6 +4,7 @@
 }
 
 html {
+    font-family: Avenir Next,Helvetica Neue,sans-serif;
     background-color: black;
     color: #bbbbbb;
 }
@@ -12,6 +13,9 @@ header {
     background-color: #eeeeee;
     color: black;
     text-align: center;
+    margin-top:-5px;
+    padding-top:15px;
+    padding-bottom:15px;
 }
 
 #headline {
@@ -35,7 +39,7 @@ header {
     padding:0;
     list-style-type: none;
     display: table;
-    width:65%;
+    width:calc(350px + 5%);
 }
 
 #contact ul li{
@@ -48,10 +52,28 @@ header {
 }
 
 .content{
-    max-width: 700px;
-    margin: auto;
-    font-family: Avenir Next,Helvetica Neue,sans-serif;
     padding: 10px;
+    width:50vw;
+    position: relative;
+    left: calc(-23vw + 50%);
+}
+
+#bio{
+    margin-left:45px;
+    padding: 10px;
+    margin-bottom:100%;
+    width:60vw;
+    position: relative;
+    left: calc(-34vw + 50%);
+    /* background-color: black; */
+}
+
+#bio h2{
+    margin-bottom: 15px;
+}
+
+p a:link, p a:visited {
+    font-weight: 600;
 }
 
 a:link, a:visited {
@@ -66,7 +88,8 @@ a:hover, a:active {
 }
 
 .li-bullet{
-    margin-left: -18%;
+    margin-left: -150px;
+    padding-left:20px;
     margin-top: 2px;
     float: left;
     font-weight: bold;
@@ -79,6 +102,7 @@ a:hover, a:active {
 ul.my-list {
     padding: 0px;
     list-style-type: none;
+    
 }
 
 ul.my-list > li{
@@ -103,9 +127,14 @@ h3, .li-bullet{
 .line-sep {
     border-top: solid 1px white;
     width: 130%;
-    margin-left:-18%;
+    margin-left:-19%;
     padding-left:18%;
     padding-top:10px;
+}
+
+.large-line-sep {
+    border-top: solid 5px rgb(97, 161, 204);
+    padding: 5px;
 }
 
 .github-project-icn {
