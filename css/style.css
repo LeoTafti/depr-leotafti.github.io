@@ -9,11 +9,20 @@ html {
     color: #bbbbbb;
 }
 
-header {
+header{
     background-color: #eeeeee;
     color: black;
     text-align: center;
     margin-top:-5px;
+    padding-top:15px;
+    padding-bottom:15px;
+}
+
+footer{
+    background-color: rgb(97, 161, 204);
+    color: black;
+    font-size: small;
+    text-align: center;
     padding-top:15px;
     padding-bottom:15px;
 }
@@ -62,7 +71,7 @@ header {
     margin-left:45px;
     padding: 10px;
     margin-bottom:100%;
-    width:60vw;
+    width:58vw;
     position: relative;
     left: calc(-34vw + 50%);
     /* background-color: black; */
