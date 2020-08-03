@@ -28,7 +28,7 @@ footer{
 }
 
 #headline {
-    margin: 5px;
+    margin: auto;
 }
 
 #fullname {
@@ -48,7 +48,7 @@ footer{
     padding:0;
     list-style-type: none;
     display: table;
-    width:calc(350px + 5%);
+    width:380px;
 }
 
 #contact ul li{
@@ -62,18 +62,19 @@ footer{
 
 .content{
     padding: 10px;
-    width:50vw;
+    width:700px;
     position: relative;
-    left: calc(-23vw + 50%);
+    margin:auto;
 }
 
 #bio{
     margin-left:45px;
     padding: 10px;
     margin-bottom:100%;
-    width:58vw;
+    width:820px;
     position: relative;
-    left: calc(-34vw + 50%);
+    margin-left:auto;
+    margin-right:auto;
     /* background-color: black; */
 }
 
@@ -209,4 +210,93 @@ p {
    
 .fade-on-load, .fade-on-scroll {
     opacity:0;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
+    /* .content, #bio{
+        background-color: magenta;
+    } */
+
+    #headline{
+        width:300px;
+    }
+
+    #contact ul{
+        width:auto;
+    }
+
+    #contact ul li{
+        display: list-item;
+        margin: 3px;
+    }
+
+    #socials{
+        top:370px;
+    }
+
+
+    .content, #bio{
+        width: 335px;
+    }
+
+    .content{
+        margin-top: 325px;
+    }
+
+    .li-bullet{
+        opacity: 0;
+    }
+
+    .icon-list{
+        padding-left: 15px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) {
+    /* .content, #bio{
+        background-color: cyan;
+    } */
+
+    .content, #bio{
+        width: 500px;
+    }
+
+    .li-bullet{
+        opacity: 0;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+    /* .content, #bio{
+        background-color: blue;
+    } */
+
+    .content, #bio{
+        width: 650px;
+    }
+
+    .li-bullet{
+        opacity: 0;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px)  and (max-width: 1199px){
+    /* .content, #bio{
+        background-color: green;
+    } */
+
+    .content{
+        left:40px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    /* .content, #bio{
+        background-color: red;
+    } */
 }
