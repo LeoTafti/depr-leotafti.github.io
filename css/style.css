@@ -300,3 +300,10 @@ p {
         background-color: red;
     } */
 }
+
+@font-face {
+    font-family: 'Avenir Next';
+    src:
+        local('Avenir Next'),
+        url('fonts/AvenirNextLTPro-Regular.otf');
+}
