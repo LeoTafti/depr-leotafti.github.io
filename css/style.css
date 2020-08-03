@@ -4,9 +4,13 @@
 }
 
 html {
-    font-family: Avenir Next,Helvetica Neue,sans-serif;
+    font-family: Avenir Next, 'Nunito', sans-serif;
     background-color: black;
     color: #bbbbbb;
+}
+
+html h1, html h2{
+    font-family: Avenir Next, 'Nunito Sans', sans-serif;
 }
 
 header{
@@ -299,11 +303,4 @@ p {
     /* .content, #bio{
         background-color: red;
     } */
-}
-
-@font-face {
-    font-family: 'Avenir Next';
-    src:
-        local('Avenir Next'),
-        url('fonts/AvenirNextLTPro-Regular.otf');
 }
