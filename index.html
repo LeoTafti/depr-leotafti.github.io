@@ -11,42 +11,34 @@
 
     </head>
     <body>
-        <header>
-            <h1 id="fullname">Léo Tafti</h1>
-            <img id="portrait" src="img/portrait.png" width="160px" height="160px" alt="Leo Tafti portrait">
-            
-            <div id="headline">
-                Outdoor sports lover, tech enthusiast – Incoming AI/ML intern @ <a href="https://unit8.co" target="_blank">Unit8 SA</a>
-            </div>
-            
-            <div id="contact">
-                <ul>
-                    <li><a href="mailto:leotafti@gmail.com"><img class="contact-icon" src="img/mail.png" width="17px" height="12px" alt="Mail icon">&nbsp;leotafti@gmail.com</a></li>
-                    <li><a href="tel:+41-79-217-23-29"><img class="contact-icon" src="img/phone.png" width="20px" height="20px" alt="Phone icon">&nbsp;+41 79 217 23 29</a></li>
+        <div id="container">
+            <header>
+                <h1 id="fullname" class="header-center-vertically">Léo Tafti</h1>
+
+                <div id="navbar" class="header-center-vertically">
+                    <div id="navbar-about" class="navbar-button" onclick="navbarClickedOn('about')">About me</div>
+                    <div id="navbar-education" class="navbar-button" onclick="navbarClickedOn('education')">Education</div>
+                    <div id="navbar-experience" class="navbar-button" onclick="navbarClickedOn('experience')">Experience</div>
+                    <div id="navbar-projects" class="navbar-button" onclick="navbarClickedOn('projects')">Projects</div>
+                </div>
+            </header>
+            <!-- <img id="portrait" src="img/portrait.png" width="160px" height="160px" alt="Leo Tafti portrait"> -->
+            <div id="bio" class="content-div">
+                <h2>ABOUT ME</h2>
+                <p>After considering being a Math major, I chose to pursue a <b>Bachelor’s degree in Computer Science @ EPFL</b> back in 2017.
+                    Since then my interest for technology has grown as well as my technical know-how. I am mostly interested in practical applications of <b>Artificial Intelligence</b>, but the field of Computer Graphics also often amazes me.</p>
+                <p>In the last couple of years I have become increasingly interested in business – more precisely in how <b>business and technology</b> interact in today’s digital era. I like to read about <b>start-ups</b> leveraging technology to build revolutionary products as well as how large corporations handle the necessary digital transformation they all have to go through.</p>
+                <p>I am an <b>avid learner</b>, keen to discover new topics, have new experiences and take up exciting challenges. With my now completed Bachelor’s degree, I am eager to start using the skills I acquired to <b>create real value</b>, as well as take up new challenges not only limited to the technical aspect of Computer Science. I am looking for opportunities at the crossroads of technology, business and finance. If you feel like I might be the right fit for your project, do not hesitate to <a href="mailto:leotafti@gmail.com" target="_blank">reach out to me!</a></p>
+                <br>
+                <h3>Languages</h3>
+                <ul class="icon-list">
+                    <li>🇫🇷 French – Native</li>
+                    <li>🇬🇧 English – Fluent</li>
+                    <li>🇩🇪 German – Proficient</li>
                 </ul>
             </div>
 
-        </header>
-        
-        <div class="large-line-sep"></div>
-
-        <div id="bio" class="fade-on-load visible-top-only">
-            <h2>ABOUT ME</h2>
-            <p>After considering being a Math major, I chose to pursue a <b>Bachelor’s degree in Computer Science @ EPFL</b> back in 2017.
-                Since then my interest for technology has grown as well as my technical know-how. I am mostly interested in practical applications of <b>Artificial Intelligence</b>, but the field of Computer Graphics also often amazes me.</p>
-            <p>In the last couple of years I have become increasingly interested in business – more precisely in how <b>business and technology</b> interact in today’s digital era. I like to read about <b>start-ups</b> leveraging technology to build revolutionary products as well as how large corporations handle the necessary digital transformation they all have to go through.</p>
-            <p>I am an <b>avid learner</b>, keen to discover new topics, have new experiences and take up exciting challenges. With my now completed Bachelor’s degree, I am eager to start using the skills I acquired to <b>create real value</b>, as well as take up new challenges not only limited to the technical aspect of Computer Science. I am looking for opportunities at the crossroads of technology, business and finance. If you feel like I might be the right fit for your project, do not hesitate to <a href="mailto:leotafti@gmail.com" target="_blank">reach out to me!</a></p>
-        </div>
-            
-        <div id="socials">
-            <ul>
-                <li><a href="https://github.com/LeoTafti" target="_blank"><img class="contact-icon" src="img/github_white.png" width="25px" height="25px" style="margin-top:-3px" alt="GitHub icon"></a></li>
-                <li><a href="https://linkedin.com/in/leotafti" target="_blank"><img class="contact-icon" src="img/linkedin_white.png" width="23px" height="23px" style="margin-top:-5px" alt="LinkedIn icon"></a></li>
-            </ul>
-        </div>
-
-        <div class="content">
-            <div id="education">
+            <div id="education" class="content-div">
                 <h2>EDUCATION</h2>
                 <ul class="my-list">
                     <li>
@@ -101,11 +93,17 @@
                 </ul>
             </div>
 
-            <div class="line-sep"></div>
-
-            <div id="experience" class="fade-on-scroll">
+            <div id="experience" class="content-div">
                 <h2>WORK EXPERIENCE</h2>
                 <ul class="my-list">
+                    <li>
+                        <span class="li-bullet">2020 - 2021 </span>
+                        <div class="li-content">
+                            <h3>AI / ML Engineer Intern</h3>
+                            <h4>Unit8 – Lausanne, Switzerland 🇨🇭</h4>
+                            <p></p>
+                        </div>
+                    </li>
                     <li>
                         <span class="li-bullet">2018 – 2019</span>
                         <div class="li-content">
@@ -126,15 +124,13 @@
                 </ul>
             </div>
 
-            <div class="line-sep"></div>
-
-            <div id="projects" class="fade-on-scroll">
+            <div id="projects" class="content-div">
                 <h2>SCHOOL & PERSONAL PROJECTS</h2>
                 <ul class="my-list">
                     <li>
                         <span class="li-bullet">Java</span>
                         <div class="li-content">
-                            <h3>GameBoj – GameBoy emulator<a href="https://github.com/LeoTafti/gameboj" target="_blank"><img src="img/github_white.png" class="github-project-icn" alt="GitHub icon"></a></h3>
+                            <h3>GameBoj – GameBoy emulator<a href="https://github.com/LeoTafti/gameboj" target="_blank"><img src="img/github_dark_blue.png" class="github-project-icn" alt="GitHub icon"></a></h3>
                             <h4>School Project @ EPFL</h4>
                             <p>Served as a first introduction to the software development process and the associated tools (<b>Eclipse</b>, <b>Git</b>, <b>JUnit</b>). The goal was to work on a project of consequent size <b>as a team</b>, as well as to serve as an introduction to <b>emulation</b> and computer / processor architecture.</p>
                         </div>
@@ -142,7 +138,7 @@
                     <li>
                         <span class="li-bullet">Processing</span>
                         <div class="li-content">
-                            <h3>Lawnbot – Virtual robot lawn mower <a href="https://github.com/LeoTafti/lawnbot" target="_blank"><img src="img/github_white.png" class="github-project-icn" alt="GitHub icon"></a></h3>
+                            <h3>Lawnbot – Virtual robot lawn mower <a href="https://github.com/LeoTafti/lawnbot" target="_blank"><img src="img/github_dark_blue.png" class="github-project-icn" alt="GitHub icon"></a></h3>
                             <h4>Personal project</h4>
                             <p>Observing a robot lawn mower patterns on the grass made me wonder about its possible inner workings. I addressed some of these challenges by building a virtual one. Allowed me to use a number of <b>graph</b> and <b>pathfinding algorithms</b>.</p>
                         </div>
@@ -150,7 +146,7 @@
                     <li>
                         <span class="li-bullet">C</span>
                         <div class="li-content">
-                            <h3>Memory Hierarchy Simulation for Intel Kaby Lake processor <a href="https://github.com/LeoTafti/progsys-memsim" target="_blank"><img src="img/github_white.png" class="github-project-icn" alt="GitHub icon"></a></h3>
+                            <h3>Memory Hierarchy Simulation for Intel Kaby Lake processor <a href="https://github.com/LeoTafti/progsys-memsim" target="_blank"><img src="img/github_dark_blue.png" class="github-project-icn" alt="GitHub icon"></a></h3>
                             <h4>School Project @ EPFL</h4>
                             <p>This project was meant to expose us to low-level system programming and its challenges. Hard but interesting, it was a first experience in developping software according to a <b>strict specification</b>.</p>
                         </div>
@@ -158,9 +154,8 @@
                 </ul>
             </div>
 
-            <div class="line-sep"></div>
-
-            <div id="skills" class="fade-on-scroll">
+            <!--
+            <div id="skills" class="content-div">
                 <h2>SKILLS</h2>
                 <h3>Programming</h3>
                     <h4>Languages</h4>
@@ -190,22 +185,30 @@
                 </ul>
             </div>
 
-            <div class="line-sep"></div>
-
-            <div id="interests" class="fade-on-scroll">
+            <div id="interests" class="content-div">
                 <h2>OTHER INTERESTS</h2>
                 <p>Outside of academia and work, I have a great passion for sports.
                     I grew up running track & field competitively and playing tennis.
                     I enjoy many sports including running 🏃‍♂️, cycling 🚴‍♂️, hiking ⛰️, skiing ⛷️, playing tennis 🎾, rowing 🚣‍♂️ and skydiving 🪂 (100+ jumps).</p>
             </div>
+            
+            --->
+
+            <footer>
+                <!-- <div id="copyright">© 2020 Léo Tafti</div> -->
+                <div id="socials">
+                    <ul>
+                        <li><a href="https://github.com/LeoTafti" target="_blank"><img src="img/github_white.png" width="21px" height="21px" alt="GitHub icon"></a></li>
+                        <li><a href="https://linkedin.com/in/leotafti" target="_blank"><img src="img/linkedin_white_round.png" width="21px" height="21px" alt="LinkedIn icon"></a></li>
+                        <li><a href="mailto:leotafti@gmail.com" target="_blank"><img src="img/mail_white.png" width="21px" height="21px" alt="Mail icon"></a></li>
+                
+                    </ul>
+                </div>
+            </footer>
         </div>
 
-        <footer>
-            © 2020 Léo Tafti
-        </footer>
-
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
+        <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script> -->
         <script src="js/script.js"></script>
     </body>
 </html>
