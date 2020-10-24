@@ -19,6 +19,7 @@ body {
     background-color: white;
     color: var(--dark-gray);
     background-image: url("../img/background.jpg");
+    background-size: cover;
     background-attachment: fixed;
     background-position: center;
     position: relative;
@@ -192,10 +193,18 @@ h3, .li-bullet{
     color:var(--dark-blue);
 }
 
+.li-content > h3{
+    font-size: 1.1em;
+}
+
 .li-content > h4{
     color: var(--dark-gray);
     font-weight: 500;
     margin-bottom: 20px;
+}
+
+.content-div > h3{
+    margin-top: 20px;
 }
 
 .github-project-icn {
@@ -234,14 +243,9 @@ b {
 
 p {
     line-height:150%;
+    margin: 10px 0px 10px 0;
 }
 
-
-@media (max-width: 375px) {
-    .content-div{
-        border-radius: 0;
-    }
-}
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575px) {
@@ -306,6 +310,17 @@ p {
         margin-right: 0px;
     }
 
+}
+
+@media (max-width: 375px) {
+    .content-div{
+        border-radius: 0;
+        width: auto;
+    }
+
+    #navbar{
+        font-size: small;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
