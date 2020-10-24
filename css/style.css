@@ -65,6 +65,10 @@ header{
     margin-left: 30px;
 }
 
+#lastname {
+    color: #dddddd;
+}
+
 #navbar{
     float:right;
     margin-right: 20px;
